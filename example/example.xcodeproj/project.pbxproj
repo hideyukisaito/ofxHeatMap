@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0163689E0CA43268792BAB72 /* heatmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 72B5ABC5169862BEDE1383E2 /* heatmap.c */; };
+		09BC7F17CA660289DDFBA06C /* BuPu.c in Sources */ = {isa = PBXBuildFile; fileRef = A5BCB89B4525858769E96C05 /* BuPu.c */; };
+		0E55FD1FDBC7CB70313BE9B0 /* Purples.c in Sources */ = {isa = PBXBuildFile; fileRef = E4849415CB3292B2589A5FDB /* Purples.c */; };
+		11A4E47C3A2EB0041C56BB19 /* Blues.c in Sources */ = {isa = PBXBuildFile; fileRef = C5A3D12AF6D244634A0F69CB /* Blues.c */; };
+		13DFEB4FCAA451F476B9082D /* BuGn.c in Sources */ = {isa = PBXBuildFile; fileRef = 49BE8B8D497C938ECE23D972 /* BuGn.c */; };
+		18361AFC325CB27C3403BBB9 /* RdGy.c in Sources */ = {isa = PBXBuildFile; fileRef = 33536F6556FAA34A9CD8A43F /* RdGy.c */; };
+		22E72E2B434659ADFA8A3508 /* BrBG.c in Sources */ = {isa = PBXBuildFile; fileRef = 588271205DF331242525DA20 /* BrBG.c */; };
+		24B2060E49B90AE0424A82E7 /* Greys.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE782939E084A7F58233752 /* Greys.c */; };
+		2DB1030263F232DBF91FB08F /* RdYlBu.c in Sources */ = {isa = PBXBuildFile; fileRef = 07D0419B2954BDFCCCA61754 /* RdYlBu.c */; };
+		4AD810E120E272DD67837048 /* GnBu.c in Sources */ = {isa = PBXBuildFile; fileRef = 806F67739E6512159F7EDD60 /* GnBu.c */; };
+		55438F562836E40F1F60332E /* PuBuGn.c in Sources */ = {isa = PBXBuildFile; fileRef = 2391913D607CD10FAA0D2C40 /* PuBuGn.c */; };
+		65ADEBC9CBD92F4350211082 /* YlGnBu.c in Sources */ = {isa = PBXBuildFile; fileRef = 164EABCAEF8813EBBC8CF5B4 /* YlGnBu.c */; };
+		7397961CADC650597EF39AE8 /* OrRd.c in Sources */ = {isa = PBXBuildFile; fileRef = 415D05E4D2F4B3DD9A3278BF /* OrRd.c */; };
+		8C5665F75F9DE63F1A6248CD /* YlGn.c in Sources */ = {isa = PBXBuildFile; fileRef = F890F3439C3A34E01B70721B /* YlGn.c */; };
+		A320748946162A149DCA75DF /* YlOrRd.c in Sources */ = {isa = PBXBuildFile; fileRef = 76E59CCBBE8503C4065D8D44 /* YlOrRd.c */; };
+		A634C796AB3188A2982BE5B0 /* Oranges.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E198D9D58FEDF48C3B18C22 /* Oranges.c */; };
+		AC9825BB8FE79C0F0101D9A9 /* Greens.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF04BCA77E0B2C2F077E5D /* Greens.c */; };
+		B325749DACEB1383A5D8A012 /* RdBu.c in Sources */ = {isa = PBXBuildFile; fileRef = 3537B0EA28E569E8D3BAF4F3 /* RdBu.c */; };
+		B43E4C6C4FB503E11F182A39 /* PRGn.c in Sources */ = {isa = PBXBuildFile; fileRef = 20F28EA79A8B6CC9A64808A6 /* PRGn.c */; };
+		B625466F83D8B6A3D1EA00C1 /* RdPu.c in Sources */ = {isa = PBXBuildFile; fileRef = FEA82D041A9837D6A90855B8 /* RdPu.c */; };
+		B7515C1E9CA2E700BEB2B248 /* YlOrBr.c in Sources */ = {isa = PBXBuildFile; fileRef = ABA027C0F7DE9FE040770E0D /* YlOrBr.c */; };
+		BA12DB062DE1E0EEA6D1A00D /* PuBu.c in Sources */ = {isa = PBXBuildFile; fileRef = E99A422096BC6182FC5842DC /* PuBu.c */; };
+		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		BC43DC1C88FCE4FF9139D1CC /* PuRd.c in Sources */ = {isa = PBXBuildFile; fileRef = E4F494D6C405B8890F64092B /* PuRd.c */; };
+		BF2D12B4C3187BEBD8AF9D8B /* Spectral.c in Sources */ = {isa = PBXBuildFile; fileRef = 40F82E8D2510F7EE5F340340 /* Spectral.c */; };
+		C6D08D1FA4394C1FB093A240 /* RdYlGn.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C92953E0D0A2B58760242A5 /* RdYlGn.c */; };
+		D6EE35BFC170F527AB634E05 /* gray.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CC96FE1795B1B1B1BF099EC /* gray.c */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
+		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
+		E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */; };
+		E45BE97F0E8CC7DD009D7055 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9750E8CC7DD009D7055 /* CoreAudio.framework */; };
+		E45BE9800E8CC7DD009D7055 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9760E8CC7DD009D7055 /* CoreFoundation.framework */; };
+		E45BE9810E8CC7DD009D7055 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9770E8CC7DD009D7055 /* CoreServices.framework */; };
+		E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9790E8CC7DD009D7055 /* OpenGL.framework */; };
+		E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+		E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424410CC5A17004149E2 /* AppKit.framework */; };
+		E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424510CC5A17004149E2 /* Cocoa.framework */; };
+		E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424610CC5A17004149E2 /* IOKit.framework */; };
+		E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		E64989A330D34058EC0028E9 /* PiYG.c in Sources */ = {isa = PBXBuildFile; fileRef = 0267F47F0C45C476C5B0F3E2 /* PiYG.c */; };
+		E6905463DF53651C359EDB8C /* PuOr.c in Sources */ = {isa = PBXBuildFile; fileRef = 59CBA3F686D3A9DA1414588E /* PuOr.c */; };
+		E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */; };
+		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
+		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
+		EB14D6C9CF52FDD306E500DA /* Reds.c in Sources */ = {isa = PBXBuildFile; fileRef = 86E53BBDC0CFA1253E1BD750 /* Reds.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0267F47F0C45C476C5B0F3E2 /* PiYG.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = PiYG.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/PiYG.c; sourceTree = SOURCE_ROOT; };
+		07D0419B2954BDFCCCA61754 /* RdYlBu.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = RdYlBu.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/RdYlBu.c; sourceTree = SOURCE_ROOT; };
+		0C92953E0D0A2B58760242A5 /* RdYlGn.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = RdYlGn.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/RdYlGn.c; sourceTree = SOURCE_ROOT; };
+		11C85B615A868AE9B1C23BBB /* YlGn.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = YlGn.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/YlGn.h; sourceTree = SOURCE_ROOT; };
+		123DD3F06EE4A880BD3B5583 /* RdYlGn.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = RdYlGn.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/RdYlGn.h; sourceTree = SOURCE_ROOT; };
+		164EABCAEF8813EBBC8CF5B4 /* YlGnBu.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = YlGnBu.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/YlGnBu.c; sourceTree = SOURCE_ROOT; };
+		1770BD052A5E8B5A904D24CF /* RdBu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = RdBu.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/RdBu.h; sourceTree = SOURCE_ROOT; };
+		1FD2A62650E47A59D4C63CC9 /* PiYG.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PiYG.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/PiYG.h; sourceTree = SOURCE_ROOT; };
+		20F28EA79A8B6CC9A64808A6 /* PRGn.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = PRGn.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/PRGn.c; sourceTree = SOURCE_ROOT; };
+		2391913D607CD10FAA0D2C40 /* PuBuGn.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = PuBuGn.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/PuBuGn.c; sourceTree = SOURCE_ROOT; };
+		33536F6556FAA34A9CD8A43F /* RdGy.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = RdGy.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/RdGy.c; sourceTree = SOURCE_ROOT; };
+		3504C74EF4C89D00922679EE /* BrBG.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BrBG.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/BrBG.h; sourceTree = SOURCE_ROOT; };
+		3537B0EA28E569E8D3BAF4F3 /* RdBu.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = RdBu.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/RdBu.c; sourceTree = SOURCE_ROOT; };
+		37CD9061572DAC23A801D9BF /* gray.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gray.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/gray.h; sourceTree = SOURCE_ROOT; };
+		40F82E8D2510F7EE5F340340 /* Spectral.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = Spectral.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/Spectral.c; sourceTree = SOURCE_ROOT; };
+		415D05E4D2F4B3DD9A3278BF /* OrRd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = OrRd.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/OrRd.c; sourceTree = SOURCE_ROOT; };
+		4926B3F895C0A28B32EBECB9 /* heatmap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = heatmap.h; path = ../../../addons/ofxHeatMap/libs/heatmap/heatmap.h; sourceTree = SOURCE_ROOT; };
+		49BE8B8D497C938ECE23D972 /* BuGn.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = BuGn.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/BuGn.c; sourceTree = SOURCE_ROOT; };
+		4AAF04BCA77E0B2C2F077E5D /* Greens.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = Greens.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/Greens.c; sourceTree = SOURCE_ROOT; };
+		4EE65D1FB3C3F72648C61739 /* YlOrBr.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = YlOrBr.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/YlOrBr.h; sourceTree = SOURCE_ROOT; };
+		588271205DF331242525DA20 /* BrBG.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = BrBG.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/BrBG.c; sourceTree = SOURCE_ROOT; };
+		59CBA3F686D3A9DA1414588E /* PuOr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = PuOr.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/PuOr.c; sourceTree = SOURCE_ROOT; };
+		5C7A30D5EF7C8018805E8589 /* Oranges.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Oranges.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/Oranges.h; sourceTree = SOURCE_ROOT; };
+		605BD5456AE611E2FB8A4254 /* BuPu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BuPu.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/BuPu.h; sourceTree = SOURCE_ROOT; };
+		60AA5157D4923E5D3E624521 /* RdPu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = RdPu.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/RdPu.h; sourceTree = SOURCE_ROOT; };
+		60C40D646440C241F46034AC /* BuGn.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BuGn.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/BuGn.h; sourceTree = SOURCE_ROOT; };
+		6E198D9D58FEDF48C3B18C22 /* Oranges.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = Oranges.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/Oranges.c; sourceTree = SOURCE_ROOT; };
+		6E754657566D5BDC6F66A6F5 /* Greens.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Greens.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/Greens.h; sourceTree = SOURCE_ROOT; };
+		7273C079BCE4F5FBD36D27F6 /* OrRd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OrRd.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/OrRd.h; sourceTree = SOURCE_ROOT; };
+		72B5ABC5169862BEDE1383E2 /* heatmap.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = heatmap.c; path = ../../../addons/ofxHeatMap/libs/heatmap/heatmap.c; sourceTree = SOURCE_ROOT; };
+		76E59CCBBE8503C4065D8D44 /* YlOrRd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = YlOrRd.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/YlOrRd.c; sourceTree = SOURCE_ROOT; };
+		7BE782939E084A7F58233752 /* Greys.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = Greys.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/Greys.c; sourceTree = SOURCE_ROOT; };
+		806F67739E6512159F7EDD60 /* GnBu.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = GnBu.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/GnBu.c; sourceTree = SOURCE_ROOT; };
+		80D390B4E6B8FE3313BBC2DF /* Purples.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Purples.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/Purples.h; sourceTree = SOURCE_ROOT; };
+		83470D8D4714B151CB40CFF3 /* GnBu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = GnBu.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/GnBu.h; sourceTree = SOURCE_ROOT; };
+		86E53BBDC0CFA1253E1BD750 /* Reds.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = Reds.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/Reds.c; sourceTree = SOURCE_ROOT; };
+		8B946405624D52907840F376 /* Spectral.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Spectral.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/Spectral.h; sourceTree = SOURCE_ROOT; };
+		996AE2CA83F5AE89B4DCE1D7 /* PuBuGn.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PuBuGn.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/PuBuGn.h; sourceTree = SOURCE_ROOT; };
+		9CA8BA37794C3E9BBE8C0D0E /* Reds.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Reds.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/Reds.h; sourceTree = SOURCE_ROOT; };
+		9CC96FE1795B1B1B1BF099EC /* gray.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = gray.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/gray.c; sourceTree = SOURCE_ROOT; };
+		A5BCB89B4525858769E96C05 /* BuPu.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = BuPu.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/BuPu.c; sourceTree = SOURCE_ROOT; };
+		A5E859880EC94631BBDDF1CF /* PuRd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PuRd.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/PuRd.h; sourceTree = SOURCE_ROOT; };
+		A6E842ADE70F726D75537DBA /* YlOrRd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = YlOrRd.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/YlOrRd.h; sourceTree = SOURCE_ROOT; };
+		ABA027C0F7DE9FE040770E0D /* YlOrBr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = YlOrBr.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/YlOrBr.c; sourceTree = SOURCE_ROOT; };
+		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
+		C5A3D12AF6D244634A0F69CB /* Blues.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = Blues.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/Blues.c; sourceTree = SOURCE_ROOT; };
+		CFA27BAAE6F02D04DF3BEBCC /* RdGy.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = RdGy.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/RdGy.h; sourceTree = SOURCE_ROOT; };
+		CFEA688E3F375B236934B6BC /* ofxHeatMap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxHeatMap.h; path = ../../../addons/ofxHeatMap/src/ofxHeatMap.h; sourceTree = SOURCE_ROOT; };
+		D23B524E40C445EA336B28B5 /* Greys.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Greys.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/Greys.h; sourceTree = SOURCE_ROOT; };
+		D49560F92E85C98D8D0F9463 /* RdYlBu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = RdYlBu.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/RdYlBu.h; sourceTree = SOURCE_ROOT; };
+		D4AE0B8EB7AF54C0A5D0899D /* PuOr.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PuOr.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/PuOr.h; sourceTree = SOURCE_ROOT; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		E45BE9750E8CC7DD009D7055 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		E45BE9760E8CC7DD009D7055 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		E45BE9770E8CC7DD009D7055 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		E45BE9790E8CC7DD009D7055 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		E4849415CB3292B2589A5FDB /* Purples.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = Purples.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/Purples.c; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exampleDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4C2424410CC5A17004149E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		E4C2424510CC5A17004149E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		E4C2424610CC5A17004149E2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		E4F494D6C405B8890F64092B /* PuRd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = PuRd.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/PuRd.c; sourceTree = SOURCE_ROOT; };
+		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		E8F232CA2D6114420CAE8965 /* PuBu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PuBu.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/PuBu.h; sourceTree = SOURCE_ROOT; };
+		E99A422096BC6182FC5842DC /* PuBu.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = PuBu.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/PuBu.c; sourceTree = SOURCE_ROOT; };
+		EA990768B0C46A1908900900 /* YlGnBu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = YlGnBu.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/YlGnBu.h; sourceTree = SOURCE_ROOT; };
+		F591FA0E0EE848F8DADE5126 /* Blues.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Blues.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/Blues.h; sourceTree = SOURCE_ROOT; };
+		F890F3439C3A34E01B70721B /* YlGn.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = YlGn.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/YlGn.c; sourceTree = SOURCE_ROOT; };
+		FA1F30E1F2E1FC1EDD9C2BB9 /* PRGn.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PRGn.h; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/PRGn.h; sourceTree = SOURCE_ROOT; };
+		FEA82D041A9837D6A90855B8 /* RdPu.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = RdPu.c; path = ../../../addons/ofxHeatMap/libs/heatmap/colorschemes/RdPu.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */,
+				E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */,
+				E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */,
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+				E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */,
+				E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */,
+				E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */,
+				E45BE97F0E8CC7DD009D7055 /* CoreAudio.framework in Frameworks */,
+				E45BE9800E8CC7DD009D7055 /* CoreFoundation.framework in Frameworks */,
+				E45BE9810E8CC7DD009D7055 /* CoreServices.framework in Frameworks */,
+				E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */,
+				E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */,
+				E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */,
+				E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */,
+				E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */,
+				E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		096870889E3472D8E6D87C68 /* colorschemes */ = {
+			isa = PBXGroup;
+			children = (
+				C5A3D12AF6D244634A0F69CB /* Blues.c */,
+				F591FA0E0EE848F8DADE5126 /* Blues.h */,
+				588271205DF331242525DA20 /* BrBG.c */,
+				3504C74EF4C89D00922679EE /* BrBG.h */,
+				49BE8B8D497C938ECE23D972 /* BuGn.c */,
+				60C40D646440C241F46034AC /* BuGn.h */,
+				A5BCB89B4525858769E96C05 /* BuPu.c */,
+				605BD5456AE611E2FB8A4254 /* BuPu.h */,
+				806F67739E6512159F7EDD60 /* GnBu.c */,
+				83470D8D4714B151CB40CFF3 /* GnBu.h */,
+				9CC96FE1795B1B1B1BF099EC /* gray.c */,
+				37CD9061572DAC23A801D9BF /* gray.h */,
+				4AAF04BCA77E0B2C2F077E5D /* Greens.c */,
+				6E754657566D5BDC6F66A6F5 /* Greens.h */,
+				7BE782939E084A7F58233752 /* Greys.c */,
+				D23B524E40C445EA336B28B5 /* Greys.h */,
+				6E198D9D58FEDF48C3B18C22 /* Oranges.c */,
+				5C7A30D5EF7C8018805E8589 /* Oranges.h */,
+				415D05E4D2F4B3DD9A3278BF /* OrRd.c */,
+				7273C079BCE4F5FBD36D27F6 /* OrRd.h */,
+				0267F47F0C45C476C5B0F3E2 /* PiYG.c */,
+				1FD2A62650E47A59D4C63CC9 /* PiYG.h */,
+				20F28EA79A8B6CC9A64808A6 /* PRGn.c */,
+				FA1F30E1F2E1FC1EDD9C2BB9 /* PRGn.h */,
+				E99A422096BC6182FC5842DC /* PuBu.c */,
+				E8F232CA2D6114420CAE8965 /* PuBu.h */,
+				2391913D607CD10FAA0D2C40 /* PuBuGn.c */,
+				996AE2CA83F5AE89B4DCE1D7 /* PuBuGn.h */,
+				59CBA3F686D3A9DA1414588E /* PuOr.c */,
+				D4AE0B8EB7AF54C0A5D0899D /* PuOr.h */,
+				E4F494D6C405B8890F64092B /* PuRd.c */,
+				A5E859880EC94631BBDDF1CF /* PuRd.h */,
+				E4849415CB3292B2589A5FDB /* Purples.c */,
+				80D390B4E6B8FE3313BBC2DF /* Purples.h */,
+				3537B0EA28E569E8D3BAF4F3 /* RdBu.c */,
+				1770BD052A5E8B5A904D24CF /* RdBu.h */,
+				33536F6556FAA34A9CD8A43F /* RdGy.c */,
+				CFA27BAAE6F02D04DF3BEBCC /* RdGy.h */,
+				FEA82D041A9837D6A90855B8 /* RdPu.c */,
+				60AA5157D4923E5D3E624521 /* RdPu.h */,
+				07D0419B2954BDFCCCA61754 /* RdYlBu.c */,
+				D49560F92E85C98D8D0F9463 /* RdYlBu.h */,
+				0C92953E0D0A2B58760242A5 /* RdYlGn.c */,
+				123DD3F06EE4A880BD3B5583 /* RdYlGn.h */,
+				86E53BBDC0CFA1253E1BD750 /* Reds.c */,
+				9CA8BA37794C3E9BBE8C0D0E /* Reds.h */,
+				40F82E8D2510F7EE5F340340 /* Spectral.c */,
+				8B946405624D52907840F376 /* Spectral.h */,
+				F890F3439C3A34E01B70721B /* YlGn.c */,
+				11C85B615A868AE9B1C23BBB /* YlGn.h */,
+				164EABCAEF8813EBBC8CF5B4 /* YlGnBu.c */,
+				EA990768B0C46A1908900900 /* YlGnBu.h */,
+				ABA027C0F7DE9FE040770E0D /* YlOrBr.c */,
+				4EE65D1FB3C3F72648C61739 /* YlOrBr.h */,
+				76E59CCBBE8503C4065D8D44 /* YlOrRd.c */,
+				A6E842ADE70F726D75537DBA /* YlOrRd.h */,
+			);
+			name = colorschemes;
+			sourceTree = "<group>";
+		};
+		42EE91DC1F2739ECA35DC19F /* heatmap */ = {
+			isa = PBXGroup;
+			children = (
+				096870889E3472D8E6D87C68 /* colorschemes */,
+				72B5ABC5169862BEDE1383E2 /* heatmap.c */,
+				4926B3F895C0A28B32EBECB9 /* heatmap.h */,
+			);
+			name = heatmap;
+			sourceTree = "<group>";
+		};
+		54AD0EBA965650D8EF94BABA /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				42EE91DC1F2739ECA35DC19F /* heatmap */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		6EB4917B03776C0E67D43760 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CFEA688E3F375B236934B6BC /* ofxHeatMap.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				C3AF34F85562F43E70867D6B /* ofxHeatMap */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		BBAB23C913894ECA00AA2426 /* system frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7F985F515E0DE99003869B5 /* Accelerate.framework */,
+				E4C2424410CC5A17004149E2 /* AppKit.framework */,
+				E4C2424510CC5A17004149E2 /* Cocoa.framework */,
+				E4C2424610CC5A17004149E2 /* IOKit.framework */,
+				E45BE9710E8CC7DD009D7055 /* AGL.framework */,
+				E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */,
+				E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */,
+				E45BE9750E8CC7DD009D7055 /* CoreAudio.framework */,
+				E45BE9760E8CC7DD009D7055 /* CoreFoundation.framework */,
+				E45BE9770E8CC7DD009D7055 /* CoreServices.framework */,
+				E45BE9790E8CC7DD009D7055 /* OpenGL.framework */,
+				E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */,
+				E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */,
+				E7E077E715D3B6510020DFD4 /* QTKit.framework */,
+			);
+			name = "system frameworks";
+			sourceTree = "<group>";
+		};
+		BBAB23CA13894EDB00AA2426 /* 3rd party frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBAB23BE13894E4700AA2426 /* GLUT.framework */,
+			);
+			name = "3rd party frameworks";
+			sourceTree = "<group>";
+		};
+		C3AF34F85562F43E70867D6B /* ofxHeatMap */ = {
+			isa = PBXGroup;
+			children = (
+				6EB4917B03776C0E67D43760 /* src */,
+				54AD0EBA965650D8EF94BABA /* libs */,
+			);
+			name = ofxHeatMap;
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E45BE5980E8CC70C009D7055 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBAB23CA13894EDB00AA2426 /* 3rd party frameworks */,
+				BBAB23C913894ECA00AA2426 /* system frameworks */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				E45BE5980E8CC70C009D7055 /* frameworks */,
+				E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = example;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -f ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\nmkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\ncp -f \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				11A4E47C3A2EB0041C56BB19 /* Blues.c in Sources */,
+				22E72E2B434659ADFA8A3508 /* BrBG.c in Sources */,
+				13DFEB4FCAA451F476B9082D /* BuGn.c in Sources */,
+				09BC7F17CA660289DDFBA06C /* BuPu.c in Sources */,
+				4AD810E120E272DD67837048 /* GnBu.c in Sources */,
+				D6EE35BFC170F527AB634E05 /* gray.c in Sources */,
+				AC9825BB8FE79C0F0101D9A9 /* Greens.c in Sources */,
+				24B2060E49B90AE0424A82E7 /* Greys.c in Sources */,
+				A634C796AB3188A2982BE5B0 /* Oranges.c in Sources */,
+				7397961CADC650597EF39AE8 /* OrRd.c in Sources */,
+				E64989A330D34058EC0028E9 /* PiYG.c in Sources */,
+				B43E4C6C4FB503E11F182A39 /* PRGn.c in Sources */,
+				BA12DB062DE1E0EEA6D1A00D /* PuBu.c in Sources */,
+				55438F562836E40F1F60332E /* PuBuGn.c in Sources */,
+				E6905463DF53651C359EDB8C /* PuOr.c in Sources */,
+				BC43DC1C88FCE4FF9139D1CC /* PuRd.c in Sources */,
+				0E55FD1FDBC7CB70313BE9B0 /* Purples.c in Sources */,
+				B325749DACEB1383A5D8A012 /* RdBu.c in Sources */,
+				18361AFC325CB27C3403BBB9 /* RdGy.c in Sources */,
+				B625466F83D8B6A3D1EA00C1 /* RdPu.c in Sources */,
+				2DB1030263F232DBF91FB08F /* RdYlBu.c in Sources */,
+				C6D08D1FA4394C1FB093A240 /* RdYlGn.c in Sources */,
+				EB14D6C9CF52FDD306E500DA /* Reds.c in Sources */,
+				BF2D12B4C3187BEBD8AF9D8B /* Spectral.c in Sources */,
+				8C5665F75F9DE63F1A6248CD /* YlGn.c in Sources */,
+				65ADEBC9CBD92F4350211082 /* YlGnBu.c in Sources */,
+				B7515C1E9CA2E700BEB2B248 /* YlOrBr.c in Sources */,
+				A320748946162A149DCA75DF /* YlOrRd.c in Sources */,
+				0163689E0CA43268792BAB72 /* heatmap.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxHeatMap/libs,
+					../../../addons/ofxHeatMap/libs/heatmap,
+					../../../addons/ofxHeatMap/libs/heatmap/colorschemes,
+					../../../addons/ofxHeatMap/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-lpthread",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxHeatMap/libs,
+					../../../addons/ofxHeatMap/libs/heatmap,
+					../../../addons/ofxHeatMap/libs/heatmap/colorschemes,
+					../../../addons/ofxHeatMap/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-lpthread",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_16)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_17)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_18)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_19)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_20)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_21)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_22)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_23)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_24)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_25)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_26)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_27)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_28)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_29)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_30)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_31)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_32)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_33)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_34)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_35)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_36)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_37)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_38)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_39)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_40)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_41)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_42)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_43)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_44)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_45)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_46)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_47)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_48)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_49)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				SDKROOT = macosx10.10;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_16)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_17)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_18)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_19)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_20)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_21)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_22)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_23)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_24)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_25)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_26)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_27)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_28)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_29)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_30)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_31)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_32)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_33)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_34)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_35)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_36)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_37)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_38)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_39)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_40)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_41)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_42)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_43)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_44)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_45)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_46)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_47)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_48)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_49)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.10;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}
