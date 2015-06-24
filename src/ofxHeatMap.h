@@ -233,7 +233,7 @@ public:
         vector<unsigned char> pixels_(mHeatMap->w * mHeatMap->h * 4);
         heatmap_render_to(mHeatMap, colorscheme, &pixels_[0]);
         
-        mHeatMapImg.clear();
+//        mHeatMapImg.clear();
         mHeatMapImg.setFromPixels(&pixels_[0], mHeatMap->w, mHeatMap->h, OF_IMAGE_COLOR_ALPHA);
         
         pixels_.clear();
@@ -246,6 +246,10 @@ public:
     
     void draw(int x, int y)
     {
+        if (!mHeatMapImg.isAllocated()) {
+            return;
+        }
+        
         mHeatMapImg.draw(x, y);
     }
     
@@ -265,6 +269,23 @@ public:
     {
         mColorScheme = const_cast<heatmap_colorscheme_t *>(colorScheme);
     }
+    
+    int getWidth()
+    {
+        return mHeatMap->w;
+    }
+    
+    int getHeight()
+    {
+        return mHeatMap->h;
+    }
+    
+    void clear()
+    {
+        heatmap_free(mHeatMap);
+        mHeatMapImg.clear();
+    }
+    
     
 private:
     heatmap_t * mHeatMap;
