@@ -286,6 +286,11 @@ public:
         mHeatMapImg.clear();
     }
     
+    void save()
+    {
+        mHeatMapImg.saveImage("heatmap-" + ofGetTimestampString() + ".png");
+    }
+    
     
 private:
     heatmap_t * mHeatMap;
