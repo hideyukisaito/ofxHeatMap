@@ -233,7 +233,6 @@ public:
         vector<unsigned char> pixels_(mHeatMap->w * mHeatMap->h * 4);
         heatmap_render_to(mHeatMap, colorscheme, &pixels_[0]);
         
-//        mHeatMapImg.clear();
         mHeatMapImg.setFromPixels(&pixels_[0], mHeatMap->w, mHeatMap->h, OF_IMAGE_COLOR_ALPHA);
         
         pixels_.clear();
@@ -289,6 +288,11 @@ public:
     void save()
     {
         mHeatMapImg.saveImage("heatmap-" + ofGetTimestampString() + ".png");
+    }
+    
+    ofImage & getImage()
+    {
+        return mHeatMapImg;
     }
     
     
