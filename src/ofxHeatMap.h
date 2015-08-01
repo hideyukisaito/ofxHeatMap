@@ -196,6 +196,7 @@ public:
     {
         mHeatMap = mom.mHeatMap;
         mColorScheme = mom.mColorScheme;
+        mStamp = mom.mStamp;
         mHeatMapImg = mom.mHeatMapImg;
         mRadius = mom.mRadius;
     }
@@ -204,6 +205,7 @@ public:
     {
         mHeatMap = mom.mHeatMap;
         mColorScheme = mom.mColorScheme;
+        mStamp = mom.mStamp;
         mHeatMapImg = mom.mHeatMapImg;
         mRadius = mom.mRadius;
     }
@@ -211,6 +213,8 @@ public:
     ~ofxHeatMap()
     {
         heatmap_free(mHeatMap);
+        heatmap_stamp_free(mStamp);
+        heatmap_colorscheme_free(mColorScheme);
         mHeatMapImg.clear();
     }
     
@@ -219,6 +223,8 @@ public:
         mHeatMap = heatmap_new(w, h);
         mColorScheme = const_cast<heatmap_colorscheme_t *>(heatmap_cs_default);
         mRadius = radius;
+        
+        mStamp = heatmap_stamp_gen(mRadius);
     }
     
     // Do not call in ofApp::update() or draw() loop!
@@ -254,14 +260,13 @@ public:
     
     void addPoint(unsigned int x, unsigned int y)
     {
-        heatmap_stamp_t * stamp_ = heatmap_stamp_gen(mRadius);
-        heatmap_add_point_with_stamp(mHeatMap, x, y, stamp_);
-        heatmap_stamp_free(stamp_);
+        heatmap_add_point_with_stamp(mHeatMap, x, y, mStamp);
     }
     
     void setRadius(unsigned int radius)
     {
         mRadius = radius;
+        mStamp = heatmap_stamp_gen(mRadius);
     }
     
     void setColorScheme(const heatmap_colorscheme_t * colorScheme)
@@ -299,6 +304,7 @@ public:
 private:
     heatmap_t * mHeatMap;
     heatmap_colorscheme_t * mColorScheme;
+    heatmap_stamp_t *mStamp;
     ofImage mHeatMapImg;
     unsigned int mRadius;
 };
