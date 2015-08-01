@@ -171,11 +171,6 @@
 #define OFX_HEATMAP_CS_WHITE_TO_BLACK                heatmap_cs_w2b
 #define OFX_HEATMAP_CS_WHITE_TO_BLACK_OPAQUE         heatmap_cs_w2b_opaque
 
-#define OFX_HEATMAP_CS_
-#define OFX_HEATMAP_CS_
-#define OFX_HEATMAP_CS_
-#define OFX_HEATMAP_CS_
-
 #define OFX_HEATMAP_DEFAULT_WIDTH 512
 #define OFX_HEATMAP_DEFAULT_HEIGHT 512
 
@@ -214,7 +209,6 @@ public:
     {
         heatmap_free(mHeatMap);
         heatmap_stamp_free(mStamp);
-        heatmap_colorscheme_free(mColorScheme);
         mHeatMapImg.clear();
     }
     
