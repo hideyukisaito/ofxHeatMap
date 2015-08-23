@@ -281,6 +281,7 @@ public:
     void clear()
     {
         heatmap_free(mHeatMap);
+        heatmap_stamp_free(mStamp);
         mHeatMapImg.clear();
     }
     
