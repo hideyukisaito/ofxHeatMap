@@ -284,9 +284,13 @@ public:
         mHeatMapImg.clear();
     }
     
-    void save()
+    void save(string name = "heatmap-" + ofGetTimestampString() + ".png")
     {
-        mHeatMapImg.saveImage("heatmap-" + ofGetTimestampString() + ".png");
+        if (ofFilePath::getFileExt(name).empty()) {
+            name += ".png";
+        }
+		
+        mHeatMapImg.saveImage(name);
     }
     
     ofImage & getImage()
