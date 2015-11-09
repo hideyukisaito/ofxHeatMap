@@ -291,7 +291,7 @@ public:
             name += ".png";
         }
 		
-        mHeatMapImg.saveImage(name);
+        mHeatMapImg.save(name);
     }
     
     ofImage & getImage()
