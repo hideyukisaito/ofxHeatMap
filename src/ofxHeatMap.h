@@ -216,26 +216,22 @@ public:
     {
         mHeatMap = heatmap_new(w, h);
         mColorScheme = const_cast<heatmap_colorscheme_t *>(heatmap_cs_default);
+        mColorBuf.resize(mHeatMap->w * mHeatMap->h * 4);
         mRadius = radius;
         
         mStamp = heatmap_stamp_gen(mRadius);
     }
-    
-    // Do not call in ofApp::update() or draw() loop!
+
     void update()
     {
         update(heatmap_cs_default);
     }
-    
-    // Do not call in ofApp::update() or draw() loop!
+
     void update(const heatmap_colorscheme_t* colorscheme)
     {
-        vector<unsigned char> pixels_(mHeatMap->w * mHeatMap->h * 4);
-        heatmap_render_to(mHeatMap, colorscheme, &pixels_[0]);
-        
-        mHeatMapImg.setFromPixels(&pixels_[0], mHeatMap->w, mHeatMap->h, OF_IMAGE_COLOR_ALPHA);
-        
-        pixels_.clear();
+        heatmap_render_to(mHeatMap, colorscheme, &mColorBuf[0]);
+        mHeatMapImg.setFromPixels(&mColorBuf[0], mHeatMap->w, mHeatMap->h, OF_IMAGE_COLOR_ALPHA);
+        mColorBuf.clear();
     }
     
     void draw()
@@ -283,9 +279,11 @@ public:
         heatmap_free(mHeatMap);
         heatmap_stamp_free(mStamp);
         mHeatMapImg.clear();
+        mColorBuf.clear();
+        std::vector<unsigned char>().swap(mColorBuf);
     }
     
-    void save(string name = "heatmap-" + ofGetTimestampString() + ".png")
+    void save(std::string name = "heatmap-" + ofGetTimestampString() + ".png")
     {
         if (ofFilePath::getFileExt(name).empty()) {
             name += ".png";
@@ -305,5 +303,6 @@ private:
     heatmap_colorscheme_t * mColorScheme;
     heatmap_stamp_t *mStamp;
     ofImage mHeatMapImg;
+    std::vector<unsigned char> mColorBuf;
     unsigned int mRadius;
 };
